@@ -1,0 +1,197 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "immo_readers_css/variables";
+.header-immo{
+	padding: 13px 20px;
+	max-width: 2000px;
+	max-height: 200px;
+}
+
+.header-immo-info{
+	
+}
+
+.header-immo-logo{
+	background-image: url('../assets/logo.png');
+	margin-leff: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	max-width: 200px;
+	max-height: 200px;
+}
+.img-logo {
+  width: 200px;
+}
+.header-container {
+    width: 100%;
+}
+.header-menu{
+  margin-top: 30px;
+  float: right;
+}
+
+.first-menu li{
+  display: inline;
+  line-height:25px;
+  padding: 2px 30px;
+  font-family: normal;
+  text-transform: uppercase; 
+  border-right: 1px solid white;
+}
+.first-menu li a{
+  color: #000;
+}
+a:link 
+{ 
+ text-decoration: #1E90FF; 
+} 
+.marquee li{
+  display: inline;
+}
+.unpoint li{
+  display: inline;
+}
+.marquee {
+  width: 60em;          /*largeur à ajuster */
+  line-height:2em;
+  text-transform: uppercase; 
+  background:#FFF;
+  color: #1E90FF;
+  margin: 0 auto;
+  overflow: hidden;    /*  masque le décalage */
+  white-space: nowrap; /* force sur une même ligne */
+  -webkit-animation: marquee 20s linear infinite;
+          animation: marquee 20s linear infinite;
+}
+/* arrêt sur mouseover */
+.marquee:hover{
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused
+}
+@-webkit-keyframes marquee{
+  0% {
+    text-indent:  22em;  /* tout à droite */
+  }
+  100% {
+    text-indent: -22em   /* tout à gauche */
+  }
+}
+@keyframes marquee{
+  0% {
+    text-indent: 22em   /* tout à droite */
+  }
+  100% {
+    text-indent: -22em   /* tout à gauche */
+  }
+}
+.second-menu{
+  margin: 20px;
+}
+.second-menu li{
+  display: inline;
+  line-height:25px;
+  padding: 2px 15px;
+  border-right: 1px solid white;
+  text-transform: uppercase; 
+}
+.second-menu li a{
+  color: #000;
+}
+.img-senegal a{
+   
+}
+.lang-seneg{
+  background: transparent url(../assets/senegal.png);
+  background-repeat: no-repeat; 
+  zoom: 1;
+}
+.img-seneg{
+  float: left;
+  width: 22px;
+}
+
+.header-logo{
+  margin-left: 35px;
+  float: left;
+}
+
+.btn-offres{
+  margin-left: 35px;
+  margin-top: 30px;
+ float: left; 
+}
+image-acheter{
+  width:200px;
+  background: url(../assets/acheter.jpg);
+}
+.top-header{
+  margin-bottom:2em;
+}
+
+.btn1
+{
+  float: left;
+  background-image: url("../assets/acheter_maison.jpg");
+  background-size: 310px 200px;
+  width : 310px;
+  height : 200px;
+  text-color: #000;
+  text-align: center;
+  margin-left: 30px;      
+  margin-right: auto; 
+  color:$color8;
+  font: 19px/1 'CicleGordita',sans-serif;
+  text-transform: uppercase;  
+}
+.btn2
+{
+  float: left;
+  background-image: url("../assets/location.jpg");
+  background-size: 310px 200px;
+  width: 310px;
+  height: 200px;
+  text-color: #000;
+  text-align: center;
+  margin-left: auto;      
+  margin-right: auto; 
+  color:$color8;
+  font: 19px/1 'CicleGordita',sans-serif;
+  text-transform: uppercase;
+}
+
+.btn3
+{
+  float: left;
+  background-image: url("../assets/vaccance1.png");
+  background-size: 310px 200px;
+  width : 310px;
+  height : 200px;
+  text-align: center;
+  margin-left: auto;      
+  margin-right: auto; 
+  color:$color8;
+  font: 19px/1 'CicleGordita',sans-serif;
+  text-transform: uppercase;
+}
+
+.btn4
+{
+  float: left;
+  background-image: url("../assets/bien.jpg");
+  background-size: 310px 200px;
+  width : 310px;
+  height: 200px;
+  text-align: center;
+  margin-left: auto;      
+  margin-right: auto; 
+  color:$color8;
+  font: 19px/1 'CicleGordita',sans-serif;
+  text-transform: uppercase;
+}
+.hr-immo{
+  border-bottom:3px solid $color9;
+  max-width: 100%;
+  margin: 10px;
+  margin-top:120px;
+}
