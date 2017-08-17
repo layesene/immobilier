@@ -1,0 +1,2 @@
+class ImmeublesController < ApplicationController
+end
