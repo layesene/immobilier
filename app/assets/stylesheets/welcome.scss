@@ -3,19 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "immo_readers_css/variables";
 @import "immo_readers_css/fonts";
-
-
-.icon-facebook {
-  background-image: url('../assets/icon_facebook_survol_30x30.png');
+.rechercher-accueil{
+  background-color: #E6E6FA;
+  max-witdh: 600px;
 }
-.icon-twitter {
-  background-image: url('../assets/icon_twitter_30x30.png');
-}
-.icon-linkedin {
-  background-image: url('../assets/icon_linkedin_30x30.png');
-}
-.icon-googleplus {
-  background-image: url('../assets/icon_googleplus_30x30.png');
+.galerie{
+  background-color: #E6E6FA;
+  max-width: 400px;
 }
 .menu-bar{
   background: $color7;
@@ -173,7 +167,13 @@ a:link
   margin-left: 35px;
   float: left;
 }
-
+.space-logo{
+  background-image: url('../assets/senegal.png');
+  background-size: 200px 150px;
+  width: 200px;
+  height: 150px;
+  margin-left: 15px;
+}
 .btn-offres{
   margin-left: 35px;
   margin-top: 30px;
@@ -252,4 +252,51 @@ image-acheter{
   max-width: 100%;
   margin: 10px;
   margin-top:120px;
+}
+.ventes-locations{
+  font-size: 15px;
+  color: #808080;
+}
+.toutes-nos-offres{
+  max-widht: 200px;
+  min-height: 120px;
+  background: #DCDCDC;
+  float: left;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.rotate{
+  transform-origin: 55px 55px;
+  transform: rotate(270deg);
+  text-transform: uppercase;
+  color: #A9A9A9;
+  margin-left: 10px;
+  font-size: 16px;
+}
+.input-radio{
+  margin-left: 30px;
+}
+.acheter-radio{
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+.louer-radio{
+  text-transform: uppercase;
+}
+.input-text{
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em;
+  font: 13.3333px Arial;
+  margin-left: 20px;
+  
+}
+input[type=text]:focus {
+  background-color: #DCDCDC;
 }

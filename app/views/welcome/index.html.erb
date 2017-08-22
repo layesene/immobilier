@@ -2,7 +2,7 @@
   <div id="col-md-12 col-sm-12">
     <u class="col-md-12 col-sm-12 unpoint">
       <li class="animated fadeIn">
-        <a href="#root_path">
+        <a href="<%=root_path%>">
           <div class="btn1">
             <div class="hr-immo"></div>
              <label>Acheter</label>
@@ -10,7 +10,7 @@
         </a>
       </li>
       <li class="animated fadeIn">
-        <a href="#root_path">
+        <a href="<%=root_path%>">
           <div class="btn2">
             <div class="hr-immo"></div>
             <label>Louer</label>
@@ -18,7 +18,7 @@
         </a>
       </li>
       <li class="animated fadeIn">
-        <a href="#root_path">
+        <a href="<%=root_path%>">
           <div class="btn3">
             <div class="hr-immo"></div>
             <label>Loccations Vaccances</label>
@@ -26,13 +26,27 @@
         </a>
       </li>
       <li class="animated fadeIn">
-        <a href="#root_path">
-          <div class="btn4">
+        <a href="<%=root_path%>">
+          <div class="btn4 btn10">
             <div class="hr-immo"></div>
             <label>Confier votre bien</label>
+            <label class="ventes-locations">Ventes/Location</label>
           </div>
         </a>
       </li>
     </u>
+    <div class="toutes-nos-offres">
+      <label class="rotate">recherche</label>
+      <div class="col-md-8 col-sm-8 input-radio">
+        <form>
+          <input type="radio" name="acheter" id="acheter" checked>
+          <label class="acheter-radio">Acheter</label>
+          <input type="radio" name="acheter" id="louer">
+          <label class="louer-radio">Louer</label><br>
+          <label >Localité</label>
+          <input type="text" class="input-text input-medium" name="localite" id="localite">
+        </form>
+      </div>
+    </div>
   </div>
 </div>
