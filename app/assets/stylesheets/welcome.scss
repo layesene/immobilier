@@ -51,7 +51,7 @@
 {
   margin-right: auto;
   margin-left: auto;
-  width: 400px;
+  max-width: 400px;
 }
 
 .margin-label-paragraphe {
@@ -247,6 +247,13 @@ image-acheter{
   font: 19px/1 'CicleGordita',sans-serif;
   text-transform: uppercase;
 }
+@media screen and (max-width: 412px) {
+  .b1{
+    background-image: url("../assets/bien.jpg");
+    width : 50%;
+    height: 50%;
+  }
+}
 .hr-immo{
   border-bottom:3px solid $color9;
   max-width: 100%;
@@ -258,11 +265,21 @@ image-acheter{
   color: #808080;
 }
 .toutes-nos-offres{
-  max-widht: 200px;
+  widht: 60%;
   min-height: 120px;
   background: #DCDCDC;
   float: left;
   margin-left: 50px;
+  margin-right: 0px;
+  margin-top: 10px;
+}
+.galerie{
+  widht: 30%;
+  min-height: 120px;
+  background: #DCDCDC;
+  float: right;
+  margin-right: 25px;
+  margin-left: 0px;
   margin-top: 10px;
 }
 .rotate{
@@ -277,7 +294,7 @@ image-acheter{
   margin-left: 30px;
 }
 .acheter-radio{
-  margin-right: 10px;
+  margin-right: 20px;
   text-transform: uppercase;
 }
 .louer-radio{
@@ -287,16 +304,56 @@ image-acheter{
   text-rendering: auto;
   letter-spacing: normal;
   word-spacing: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
   display: inline-block;
-  text-align: start;
   margin: 0em;
   font: 13.3333px Arial;
   margin-left: 20px;
-  
 }
 input[type=text]:focus {
   background-color: #DCDCDC;
+}
+.budget{
+  margin-right: 10px;
+}
+.footer-content{
+  width: 95%;
+  max-width: 1280px!important;
+  font-size: 11px;
+  margin: 20px auto 0;
+}
+.footer{
+  background-image: url('../assets/immobilier.png');
+  background-size: 400px 400px;
+  height: 400px;
+  margin-top: 30px;
+}
+.hv{
+  height: 200px;
+  border-left: 3px solid $color12;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.hv1{
+  height: 120px;
+  border-left: 3px solid $color12;
+  margin-top: 120px;
+  margin-bottom: 0px;
+}
+.span-annonces{
+  font: 20px 'CicleSemi',sans-serif;
+  color: $color12;
+}
+.footer-services{
+  color: $color9;
+  font-size: 15px;
+}
+.footer-info-dakar{
+  color: $color9;
+  font: 27px 'CicleFina',sans-serif;
+  text-shadow: 0 1px 1px #000;
+}
+.footer-info{
+  color: $color9;
+  font: 18px 'CicleFina',sans-serif;
+  text-shadow: 0 1px 1px #000;
 }

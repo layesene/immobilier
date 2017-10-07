@@ -1,3 +1,39 @@
+<div class="collapse navbar-collapse" id="myNavbar">
+  <% if user_signed_in? %>
+    <div class="nav navbar-nav navbar-right">
+      <div class="dropdown hidden-xs">
+        <div class="nav-user dropdown-toggle" data-toggle="dropdown">
+          <%= current_user.lastname %>
+          <%= current_user.name %>
+          <span class="caret"></span>
+        </div>
+          <ul class="dropdown-menu">
+            <li class='divider'>Mon profil</li>
+            <li>
+              <%= link_to destroy_user_session_path, class: "color-menu", method: :delete do %>
+              <%= fa_icon('sign-out', text: 'Se déconnecter') %>
+              <% end %>
+            </li>
+          </ul>
+        </div>
+        <ul class="visible-xs nav navbar-nav navbar-right" id="padding-right-nav">
+          <li class='divider'>
+          </li>
+          <li class="page-scroll nav-li-mobile">
+            <%= link_to destroy_user_session_path, class: "color-menu nav-menu-xs", method: :delete do %>
+            <%= fa_icon('sign-out', text: 'Se déconnecter') %>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    <% else %>
+    <ul class="nav navbar-nav navbar-right" id="padding-right-nav">
+      <li class="nav-button-account page-scroll">
+        <a href="<%= new_user_session_path %>" class="links"></a>
+      </li>
+    </ul>
+  <% end %>
+</div>
 <head class="col-md-12 col-sm-12 top-header" id="top">
   <div class="header-container">
     <div class="row">

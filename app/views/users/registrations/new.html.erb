@@ -41,6 +41,18 @@
         <%= f.label :password_confirmation %><br />
         <%= f.password_field :password_confirmation, autocomplete: "off" %>
       </div>
+
+      <div class="field">
+        <%= f.label :name %><br />
+        <%= f.text_field  :name, autocomplete: "off", placeholder: "Nom" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :lastname %><br />
+        <%= f.text_field  :lastname, autocomplete: "off", placeholder: "Prénom" %>
+        <%= f.text_field  :profil, autocomplete: "off", type: "hidden", value: "simple_user" %>
+      </div>
+
       <div class="actions">
         <%= f.submit "S'inscrire", class: "btn-sessions" %><br /><br />
       </div>

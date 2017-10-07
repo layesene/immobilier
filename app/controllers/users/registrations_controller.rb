@@ -9,7 +9,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # POST /resource
   # def create
-  #   super
+     #super
   # end
 
   # GET /resource/edit
@@ -57,4 +57,12 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # def after_inactive_sign_up_path_for(resource)
   #   super(resource)
   # end
+
+  #@user = User.new params[:user]
+  #@user.skip_confirmation_notification! 
+  #@user.save
+
+# ... do stuff, then later...
+
+  #Devise::Mailer.confirmation_instructions(@user).deliver 
 end

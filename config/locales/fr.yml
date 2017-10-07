@@ -20,7 +20,6 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 fr:
-  
   date:
     abbr_day_names: [Dim, Lun, Mar, Mer, Jeu, Ven, Sam]
     abbr_month_names: [~, Jan, Fév, Mar, Avr, Mai, Jun, Jul, Août, Sep, Oct, Nov, Déc]

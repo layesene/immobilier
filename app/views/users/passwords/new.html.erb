@@ -1,16 +1,37 @@
-<h2>Forgot your password?</h2>
-
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
-  </div>
-<% end %>
-
-<%= render "users/shared/links" %>
+<div class="menu-bar">
+  <ul>
+    <li>
+      <a href="<%= root_path %>">Accueil</a>
+    </li>
+    <li>
+      <a href="<%= root_path %>">Acheter</a>
+    </li>
+    <li>
+      <a href="<%= root_path %>">Louer</a>
+    </li>
+    <li>
+      <a href="<%= root_path %>">Locations Vaccances</a>
+    </li>
+    <li>
+      <a href="<%= root_path %>">Confier votre bien</a>
+    </li>
+  </ul>
+</div>
+<div class="login-form-panel panel panel-default margin-label-paragraphe ">
+	<div class="panel-body div-sessions">
+		<center>
+			<h2>Forgot your password?</h2>
+			<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+				<%= devise_error_messages! %>
+				<div class="field">
+					<%= f.label :email %><br />
+					<%= f.email_field :email, autofocus: true %>
+				</div>
+				<div class="actions">
+					<%= f.submit "Send me reset password instructions" %>
+				</div>
+			<% end %>
+			<%= render "users/shared/links" %>
+		</center>
+	</div>
+</div>

@@ -1,4 +1,4 @@
-require_relative 'boot'
+ 	require_relative 'boot'
 
 require 'rails/all'
 
@@ -11,7 +11,14 @@ module Immobilier
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
-    config.i18n.load_path += Dir[Rails.root.join('im', 'locales', '*.{rb,yml}').to_s]
+    config.middleware.insert_before 0, "Rack::Cors" do
+      allow do
+      	origins '*'
+      	resource '*', :headers => :any, :methods => [:get, :post, :options]
+      end
+  	end
+    config.api_only = true
+    config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :fr
     config.assets.precompile += ['application-print.css']
   end

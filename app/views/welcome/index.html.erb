@@ -2,32 +2,32 @@
   <div id="col-md-12 col-sm-12">
     <u class="col-md-12 col-sm-12 unpoint">
       <li class="animated fadeIn">
-        <a href="<%=root_path%>">
-          <div class="btn1">
+        <a href="<%=acheter_path%>">
+          <div class="btn1 b1">
             <div class="hr-immo"></div>
              <label>Acheter</label>
           </div>
         </a>
       </li>
       <li class="animated fadeIn">
-        <a href="<%=root_path%>">
-          <div class="btn2">
+        <a href="<%=louer_path%>">
+          <div class="btn2 b1">
             <div class="hr-immo"></div>
             <label>Louer</label>
           </div>
         </a>
       </li>
       <li class="animated fadeIn">
-        <a href="<%=root_path%>">
-          <div class="btn3">
+        <a href="<%=location_vaccances_path%>">
+          <div class="btn3 b1">
             <div class="hr-immo"></div>
             <label>Loccations Vaccances</label>
           </div>
         </a>
       </li>
       <li class="animated fadeIn">
-        <a href="<%=root_path%>">
-          <div class="btn4 btn10">
+        <a href="<%=confier_bien_path%>">
+          <div class="btn4 b1">
             <div class="hr-immo"></div>
             <label>Confier votre bien</label>
             <label class="ventes-locations">Ventes/Location</label>
@@ -35,18 +35,32 @@
         </a>
       </li>
     </u>
-    <div class="toutes-nos-offres">
-      <label class="rotate">recherche</label>
-      <div class="col-md-8 col-sm-8 input-radio">
+    <div class="col-md-8 col-sm-8 toutes-nos-offres">
+      <div>
+        <label class="rotate">recherche</label>
+      </div>
+      <div class="col-md-12 col-sm-12 input-radio">
         <form>
-          <input type="radio" name="acheter" id="acheter" checked>
-          <label class="acheter-radio">Acheter</label>
-          <input type="radio" name="acheter" id="louer">
-          <label class="louer-radio">Louer</label><br>
-          <label >Localité</label>
-          <input type="text" class="input-text input-medium" name="localite" id="localite">
+          <div class="col-md-12 col-sm-12">
+            <input type="radio" name="acheter" id="acheter" checked>
+            <label class="acheter-radio">Acheter</label>
+            <input type="radio" name="acheter" id="louer">
+            <label class="louer-radio">Louer</label><br>
+          </div>
+          <div class="">
+            <label>Localité</label>
+            <input type="text" class="input-text" name="localite" id="localite">
+            <label>Budget</label>
+            <input type="text" class="" name="budget_min" id="budget_min">
+            <span>f</span>
+            <input type="text" class="" name="budget_max" id="budget_max">
+            <span>f</span>
+          </div>
         </form>
       </div>
+    </div>
+    <div class="col-md-3 col-sm-3 galerie">
+     Galerie ici
     </div>
   </div>
 </div>

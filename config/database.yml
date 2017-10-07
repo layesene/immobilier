@@ -4,15 +4,24 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 #
+#default: &default
+#  adapter: postgresql
+#  encoding: utf8
+#  username: immobilier_user
+#  password: immobilier_pass123!
+#  port: 5432
+#  host: 127.0.0.1
+#  pool: 5
+#  timeout: 5000
+
+# use mysql adaptater
 default: &default
-  adapter: postgresql
-  encoding: utf8
-  username: immobilier_user
-  password: immobilier_pass123!
-  port: 5432
-  host: 127.0.0.1
-  pool: 5
-  timeout: 5000
+    adapter: mysql2
+    encoding: utf8
+    port: 3306
+    database: immobilier_development
+    username: root
+    password: ndoundokh
 
 development:
   <<: *default
@@ -26,8 +35,8 @@ test:
   database: immobilier_test
 
 production:
-  adapter: postgresql
+  adapter: mysql2 #postgresql
   encoding: utf8
-  username: immobilier_user
-  password: immobilier_pass123!
+  username: root #immobilier_user
+  password: ndoundokh #immobilier_pass123!
   database: immobilier_development
