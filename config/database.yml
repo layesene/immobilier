@@ -1,0 +1,32 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+# use mysql adaptater
+default: &default
+    adapter: mysql2
+    encoding: utf8
+    port: 3306
+    database: immobilier_development
+    username: root
+    password: ndoundokh
+
+development:
+  <<: *default
+  database: immobilier_development
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: immobilier_test
+
+production:
+  adapter: mysql2 #postgresql
+  encoding: utf8
+  username: root #immobilier_user
+  password: ndoundokh #immobilier_pass123!
+  database: immobilier_development
